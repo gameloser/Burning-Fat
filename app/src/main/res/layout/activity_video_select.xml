@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Video List"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:background="@color/colorPrimary"
+        android:text="Arms Workout"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/ib_arm"
+        android:layout_width="196dp"
+        android:layout_height="116dp"
+        android:layout_marginLeft="60dp"
+        app:srcCompat="@drawable/v_arms" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:background="@color/colorPrimary"
+        android:text="Belly Workout"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/ib_belly"
+        android:layout_width="196dp"
+        android:layout_height="116dp"
+        android:layout_marginLeft="60dp"
+        app:srcCompat="@drawable/v_belly" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:background="@color/colorPrimary"
+        android:text="Legs Workout"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/ib_leg"
+        android:layout_width="196dp"
+        android:layout_height="116dp"
+        android:layout_marginLeft="60dp"
+        app:srcCompat="@drawable/v_leg" />
+</LinearLayout>

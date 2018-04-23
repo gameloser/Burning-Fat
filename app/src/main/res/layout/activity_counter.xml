@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CounterActivity">
+
+
+    <Button
+        android:id="@+id/counter_circle"
+        style="@style/Button.Round.CounterCircle"
+        android:layout_alignStart="@+id/counter_ready_prompt"
+        android:layout_below="@+id/counter_ready_prompt"
+        android:onClick="togglePause" />
+
+    <TextView
+        android:id="@+id/counter_ready_prompt"
+        style="@style/Text.Label.CountReady"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Ready to go!" />
+
+    <RelativeLayout
+        android:id="@+id/paused_control_layout"
+        style="@style/BottomControlLayout">
+
+        <ImageButton
+            android:id="@+id/button_decrement"
+            style="@style/Button.Round.Small.LightGrey"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="Decrement"
+            android:onClick="decrementCount"
+            android:src="@drawable/ic_chevron_left" />
+
+
+        <ImageButton
+            android:id="@+id/button_increment"
+            style="@style/Button.Round.Small.LightGrey"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="Increment"
+            android:onClick="incrementCount"
+            android:src="@drawable/ic_chevron_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/resumed_control_layout"
+        style="@style/BottomControlLayout">
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/button_reset"
+        style="@style/Button.Round.Small.DarkGrey"
+        android:layout_alignTop="@+id/paused_control_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:contentDescription="Reset"
+        android:onClick="resetCount"
+        android:src="@drawable/ic_reset"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs.dal.a4176_project.CodeInfoActivity">
+
+
+
+    <TextView
+        android:id="@+id/trop_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#006600"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:text="Tropicana Pure Premium® Original" />
+
+
+    <TextView
+        android:id="@+id/trop_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trop_header"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:background="#ebebe0"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:text="Start your day with a 250mL glass of Tropicana Pure Premium® Original Orange Juice and you’ll be giving your body a full day’s supply of Vitamin C – a dietary antioxidant – plus all the potassium you’d find in a medium sized banana. " />
+
+
+    <TextView
+        android:id="@+id/trop_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tableLayout2"
+        android:textColor="#006600"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Kindly Suggestions" />
+
+    <TextView
+        android:id="@+id/trop_suggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/trop_footer"
+        android:textColor="#000000"
+        android:background="#ebebe0"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:text="High Sugar Content\nNot recommended to drink for body-building" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trop_des"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:stretchColumns="*"
+        android:id="@+id/tableLayout2">
+
+        <TableRow
+            android:textSize="24dp"
+            android:textColor="#000000"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#006600"
+                android:text="                "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#006600"
+                android:textStyle="bold"
+                android:text="Amount per serving"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#006600"
+                android:textStyle="bold"
+                android:text="\t% Daily Value"/>
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:background="#ebebe0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="    Calories"
+                android:id="@+id/a1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="              170"
+                android:id="@+id/b1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="    Fat"
+                android:id="@+id/a2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="              0 g"
+                android:id="@+id/b2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="                   0 %"/>
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:background="#ebebe0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="    Cholesterol"
+                android:id="@+id/a3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="              0 mg"
+                android:id="@+id/b3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="                   0 %"/>
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="    Sodium"
+                android:id="@+id/a4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="              0 mg"
+                android:id="@+id/b4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="                   0 %" />
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:background="#ebebe0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="    Potassium"
+                android:id="@+id/a5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="              670 mg"
+                android:id="@+id/b5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="                 19 %"/>
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="    Carbohydrate"
+                android:id="@+id/a6"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="              39 g"
+                android:id="@+id/b6"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="                 13 %"/>
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="          Fibre"
+                android:id="@+id/a7"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="              0 g"
+                android:id="@+id/b7"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="          Sugars"
+                android:id="@+id/a8"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="              34 g"
+                android:id="@+id/b8"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:background="#ebebe0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="    Protein"
+                android:id="@+id/a9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="              3 g"
+                android:id="@+id/b9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="    Vitamin A"
+                android:id="@+id/a10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:id="@+id/b10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="                  0 %"/>
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="    Vitamin C"
+                android:id="@+id/a11"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:id="@+id/b11"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="              150 %"/>
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:background="#ebebe0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="    Calcium"
+                android:id="@+id/a12"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:id="@+id/b12"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="                  2 %"/>
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="    Iron"
+                android:id="@+id/a13"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:id="@+id/b13"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="                  2 %"/>
+        </TableRow>
+
+        <TableRow
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:background="#ebebe0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="    Folate"
+                android:id="@+id/a14"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:id="@+id/b14"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="                40 %"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

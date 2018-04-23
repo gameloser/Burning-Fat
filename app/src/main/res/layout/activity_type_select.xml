@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Choose An Activity Type"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="286dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:divider="@drawable/empty_tall_divider"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/run_type"
+            android:layout_width="95dp"
+            android:layout_height="92dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/running" />
+
+        <ImageButton
+            android:id="@+id/bicycle_type"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bicycle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="286dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:divider="@drawable/empty_tall_divider"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:divider="@drawable/empty_tall_divider"
+            android:text="Run"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:divider="@drawable/empty_tall_divider"
+            android:text="Bicycle"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:divider="@drawable/empty_tall_divider"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/swim_type"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/swim" />
+
+        <ImageButton
+            android:id="@+id/rope_type"
+            android:layout_width="97dp"
+            android:layout_height="89dp"
+            android:background="@drawable/rope_skip" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="286dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:divider="@drawable/empty_tall_divider"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:divider="@drawable/empty_tall_divider"
+            android:text="Swim"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:divider="@drawable/empty_tall_divider"
+            android:text="Rope Skip"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:divider="@drawable/empty_tall_divider"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/pushup_type"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/push_up" />
+
+        <ImageButton
+            android:id="@+id/situp_type"
+            android:layout_width="103dp"
+            android:layout_height="101dp"
+            android:background="@drawable/sit_up" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="286dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:divider="@drawable/empty_tall_divider"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:divider="@drawable/empty_tall_divider"
+            android:text="Push Up"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:divider="@drawable/empty_tall_divider"
+            android:text="Sit Up"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

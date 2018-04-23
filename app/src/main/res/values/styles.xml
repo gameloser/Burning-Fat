@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Button.Round" parent="Widget.AppCompat.Toolbar.Button.Navigation"></style>
+
+    <style name="Button.Round.CounterCircle">
+        <item name="android:layout_width">@dimen/counter_circle_diameter</item>
+        <item name="android:layout_height">@dimen/counter_circle_diameter</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/counter_circle_text_size</item>
+    </style>
+
+    <style name="Text.Label" parent="Base.TextAppearance.AppCompat.Large"></style>
+
+    <style name="Text.Label.CountReady">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">
+            @dimen/counter_readyPrompt_margin
+        </item>
+        <item name="android:textSize">
+            @dimen/counter_readyPrompt_text_size
+        </item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="BottomControlLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Button.Round.Small">
+        <item name="android:layout_width">
+            @dimen/button_round_small_diameter
+        </item>
+        <item name="android:layout_height">
+            @dimen/button_round_small_diameter
+        </item>
+        <item name="android:layout_margin">
+            @dimen/button_round_small_margins
+        </item>
+    </style>
+
+    <style name="Button.Round.Small.LightGrey">
+        <item name="android:background">
+            @drawable/bg_button_round_lightgrey
+        </item>
+    </style>
+
+    <style name="Button.Round.Small.DarkGrey">
+        <item name="android:background">@drawable/bg_button_round_darkgrey
+        </item>
+    </style>
+
+    <style name="Button.Round.Small.Green">
+        <item name="android:background">@drawable/bg_button_round_green</item>
+    </style>
+
+</resources>

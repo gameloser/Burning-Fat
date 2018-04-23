@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnserver"
+        android:layout_alignBottom="@+id/btnserver"
+        android:layout_alignStart="@+id/btnDis"
+        android:text="Scan Device" />
+
+    <Button
+        android:id="@+id/btnDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tbtnSwitch"
+        android:layout_alignBottom="@+id/tbtnSwitch"
+        android:layout_marginStart="61dp"
+        android:layout_toEndOf="@+id/tbtnSwitch"
+        android:text="Set Visible" />
+
+    <Button
+        android:id="@+id/btnserver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tbtnSwitch"
+        android:layout_below="@+id/tbtnSwitch"
+        android:layout_marginTop="23dp"
+        android:text="Request" />
+
+    <Switch
+        android:id="@+id/tbtnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="22dp"
+        android:checked="false"
+        android:text="Bluetooth"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+    <ListView
+        android:id="@+id/lvDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnSearch"
+        android:layout_marginTop="15dp"
+        android:background="#daf1eb" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="35dp"
+        android:text="BACK" />
+</RelativeLayout>

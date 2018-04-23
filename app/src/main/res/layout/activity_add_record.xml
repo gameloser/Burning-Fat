@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sportRecord"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:text="Daily Progress"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/stype"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sportRecord"
+        android:layout_toEndOf="@+id/sportRecord"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/stitle"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sport_weight"
+        android:layout_below="@+id/sport_weight"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/stime"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/stype"
+        android:layout_below="@+id/stype"
+        android:ems="10"
+        android:inputType="time" />
+
+
+    <EditText
+        android:id="@+id/splanned"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/stime"
+        android:layout_below="@+id/stime"
+        android:ems="6"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/dietRecord"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+
+        android:layout_alignStart="@+id/sportRecord"
+        android:layout_below="@+id/stitle"
+        android:layout_marginTop="8dp"
+        android:text="Diet Plan"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/dtype"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/stitle"
+        android:layout_below="@+id/dietRecord"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dtitle"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/damount"
+        android:layout_below="@+id/damount"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/damount"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dtype"
+        android:layout_below="@+id/dtype"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/add_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add_record"
+        android:layout_alignBottom="@+id/add_record"
+        android:layout_toEndOf="@+id/textView18"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/add_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="6dp"
+        android:layout_toStartOf="@+id/afterweight2"
+        android:background="@android:color/holo_green_light"
+        android:text="Add" />
+
+    <EditText
+        android:id="@+id/sport_weight"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/splanned"
+        android:layout_below="@+id/splanned"
+        android:ems="6"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stime"
+        android:layout_alignStart="@+id/sportRecord"
+        android:layout_marginStart="17dp"
+        android:text="Type"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stitle"
+        android:layout_alignBottom="@+id/stitle"
+        android:layout_alignEnd="@+id/textView16"
+        android:text="Note"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/splanned"
+        android:layout_alignStart="@+id/textView14"
+        android:text="Time"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/splanned"
+        android:layout_alignStart="@+id/textView16"
+        android:text="Distance"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sport_weight"
+        android:layout_alignStart="@+id/textView17"
+        android:text="Weight"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/damount"
+        android:layout_alignStart="@+id/textView18"
+        android:text="Type"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dtitle"
+        android:layout_alignStart="@+id/textView22"
+        android:text="Amount"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dtitle"
+        android:layout_alignStart="@+id/textView20"
+        android:text="Note"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/aftertime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/stime"
+        android:textSize="18sp"
+        android:text="mins" />
+
+    <TextView
+        android:id="@+id/afterdistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/aftertime"
+        android:layout_alignTop="@+id/textView17"
+        android:textSize="18sp"
+        android:text="km" />
+
+    <TextView
+        android:id="@+id/afterweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/afterdistance"
+        android:layout_alignTop="@+id/textView18"
+        android:textSize="18sp"
+        android:text="kg" />
+
+    <TextView
+        android:id="@+id/afterweight2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/damount"
+        android:layout_alignStart="@+id/afterweight"
+        android:textSize="18sp"
+        android:text="kg" />
+
+</RelativeLayout>

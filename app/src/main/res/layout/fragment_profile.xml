@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs.dal.a4176_project.ProfileEditActivity">
+
+    <ImageView
+        android:id="@+id/protrait_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tname"
+        android:layout_marginEnd="15dp"
+        android:background="@color/common_google_signin_btn_text_light_default"
+        android:src="@drawable/portrait_icon" />
+
+    <TextView
+        android:id="@+id/tname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="22dp"
+        android:text="Full name" />
+
+    <TextView
+        android:id="@+id/ename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tname"
+        android:layout_below="@+id/tname"
+        android:ems="6"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dage"
+        android:layout_below="@+id/ename"
+        android:layout_marginTop="22dp"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/dage"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ename"
+        android:layout_below="@+id/tage"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dage"
+        android:layout_below="@+id/dage"
+        android:layout_marginTop="22dp"
+        android:text="Gender" />
+
+    <TextView
+        android:id="@+id/egender"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tgender"
+        android:layout_below="@+id/tgender"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/theight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/egender"
+        android:layout_below="@+id/egender"
+        android:layout_marginTop="22dp"
+        android:text="Height" />
+
+    <TextView
+        android:id="@+id/eheight"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/theight"
+        android:layout_below="@+id/theight"
+        android:ems="10"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eheight"
+        android:layout_alignBottom="@+id/eheight"
+        android:layout_toEndOf="@+id/eheight"
+        android:ems="10"
+        android:text="CM"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/eheight"
+        android:layout_below="@+id/eheight"
+        android:layout_marginTop="22dp"
+        android:text="Weight" />
+
+    <TextView
+        android:id="@+id/eweight"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tweight"
+        android:layout_below="@+id/tweight"
+        android:ems="10"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eweight"
+        android:layout_alignBottom="@+id/eweight"
+        android:layout_toEndOf="@+id/eweight"
+        android:ems="10"
+        android:text="Kg"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tmedicalhistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/eweight"
+        android:layout_below="@+id/eweight"
+        android:layout_marginTop="22dp"
+        android:text="Medical History" />
+
+    <TextView
+        android:id="@+id/emedicalhistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tmedicalhistory"
+        android:layout_below="@+id/tmedicalhistory"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/FileEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emedicalhistory"
+        android:layout_below="@+id/emedicalhistory"
+        android:layout_marginTop="21dp"
+        android:text="EDIT" />
+
+    <TextView
+        android:id="@+id/lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/level"
+        android:layout_alignBottom="@+id/level"
+        android:layout_toEndOf="@+id/image_lv"
+        android:fontFamily="casual"
+        android:text="Lv."
+        android:textColor="#ffb400"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/protrait_icon"
+        android:layout_toEndOf="@+id/lv"
+        android:fontFamily="casual"
+        android:paddingLeft="10dp"
+        android:textColor="#ffb400"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_lv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/protrait_icon"
+        android:layout_below="@+id/protrait_icon"
+        app:srcCompat="@drawable/lv1" />
+
+
+</RelativeLayout>

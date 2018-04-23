@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs.dal.a4176_project.AlarmActivity">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/ic_alarm_black_48dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_alignTop="@+id/imageButton4"
+        android:background="@drawable/ic_bluetooth" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_marginStart="56dp"
+        android:layout_toEndOf="@+id/imageButton"
+        android:background="@drawable/ic_computer_black_48dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="11dp"
+        android:text="Alarm" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignStart="@+id/imageButton2"
+        android:text="Calorie Calculation" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/imageButton3"
+        android:layout_marginTop="11dp"
+        android:text="Bluetooth" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignEnd="@+id/imageButton4"
+        android:text="Workout Video" />
+
+    <TextView
+        android:id="@+id/lock_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView10"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:background="#c1c0b8"
+        android:paddingLeft="5dp"
+        android:text="Lv.1 Unlock"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lock_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton4"
+        android:layout_alignEnd="@+id/imageButton4"
+        android:layout_alignStart="@+id/imageButton4"
+        android:background="#c1c0b8"
+        android:paddingLeft="5dp"
+        android:text="Lv.1 Unlock"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lock_cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lock_alarm"
+        android:layout_alignBottom="@+id/lock_alarm"
+        android:layout_alignEnd="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        android:background="#c1c0b8"
+        android:paddingLeft="5dp"
+        android:text="Lv.2 Unlock"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButton3"
+        android:layout_below="@+id/textView12"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_idea" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView10"
+        android:layout_below="@+id/imageButton5"
+        android:layout_marginTop="11dp"
+        android:text="Advice" />
+</RelativeLayout>
